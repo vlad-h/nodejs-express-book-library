@@ -9,52 +9,60 @@ const books = [
     title: 'War and Peace',
     genre: 'Historical Fiction',
     author: 'Lev Nikolayevich Tolstoy',
-    read: false
+    read: false,
+    bookId: 656
   },
   {
     title: 'Les Misérables',
     genre: 'Historical Fiction',
     author: 'Victor Hugo',
-    read: false
+    read: false,
+    bookId: 24280
   },
   {
     title: 'The Time Machine',
     genre: 'Science Fiction',
     author: 'H. G. Wells',
-    read: false
+    read: false,
+    bookId: 2493
   },
   {
     title: 'A Journey into the Center of the Earth',
     genre: 'Science Fiction',
     author: 'Jules Verne',
-    read: false
+    read: false,
+    bookId: 32829
   },
   {
     title: 'The Dark World',
     genre: 'Fantasy',
     author: 'Henry Kuttner',
-    read: false
+    read: false,
+    bookId: 1881716
   },
   {
     title: 'The Wind in the Willows',
     genre: 'Fantasy',
     author: 'Kenneth Grahame',
-    read: false
+    read: false,
+    bookId: 5659
   },
   {
     title: 'Life On The Mississippi',
     genre: 'History',
     author: 'Mark Twain',
-    read: false
+    read: false,
+    bookId: 99152
   },
   {
     title: 'Childhood',
     genre: 'Biography',
     author: 'Lev Nikolayevich Tolstoy',
-    read: false
+    read: false,
+    bookId: 42253731
   }];
 
-function router(nav) {
+function router() {
   adminRouter.route('/')
     .get((req, res) => {
       const url = 'mongodb://localhost:27017';
